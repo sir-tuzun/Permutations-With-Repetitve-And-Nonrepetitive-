@@ -53,7 +53,7 @@ public class Permutation {
         for (int i = 0; i < s2.length(); i++){
             /* 
             If on hand letter is repetitive program will not go into the this permutation 
-            because the letter's permutations are already occourded. It going to analyze next letter.
+            because the letter's permutations are already occourded. It is going to analyze next letter.
             */
             if(markRepetitive[i])
                 continue;
