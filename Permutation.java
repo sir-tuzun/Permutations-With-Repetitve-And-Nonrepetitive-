@@ -19,7 +19,7 @@ public class Permutation {
         boolean b1 = isRepetitive(permutation);
         
         /* 
-        if string is repetitive the program will execute override "loops" method.
+        if string is repetitive the program will execute overload "loops" method.
         we need to know which letters is exist more than one at after the switch.
         */
         if (b1) {
@@ -36,11 +36,9 @@ public class Permutation {
         
         System.out.println("There are " + count[0] + " different string permuatations.");
         System.out.println("Elapsed time = " + (double)(finish - start)/1000 + " second.");
-        
     }
      
     public static void loops(String s1, String s2, int[] count, boolean[] markRepetitive) {
-        // If there is no letters to switch program will print the string and exit from loop and method. 
         if(s2.length() == 0) {
             System.out.println(s1);
             count[0]++;
@@ -48,7 +46,6 @@ public class Permutation {
         
         markRepetitive = findRepetitive(s2);
         for (int i = 0; i < s2.length(); i++){
-             
             //If on hand letter is repetitive program will not go into the this permutation 
             if(markRepetitive[i])
                 continue;
