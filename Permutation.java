@@ -12,10 +12,8 @@ public class Permutation {
         long start;
         long finish; 
 
-        // Need a counter which is stored in heap.
         int[] count = {0};          
-        
-        // decide string is repetitive or not. 
+
         boolean b1 = isRepetitive(permutation);
         
         /* 
