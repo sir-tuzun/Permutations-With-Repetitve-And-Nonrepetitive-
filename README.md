@@ -10,11 +10,9 @@ s2 = "ABC";
 
       A BC                        B AC                        C AB            --------> loops 1
 
-  AB C    AC B              BA C      BC A               CA B       CB A      --------> loops 2
+    AB C    AC B              BA C      BC A               CA B       CB A      --------> loops 2
 
-ABC           ACB        BAC                BCA       CAB               CBA   --------> s2 length is zero here so the method will print the 
-                                                                                        permutation and the lopp finished and program continue with       
-                                                                                        perivious loop.
+  ABC           ACB        BAC                BCA       CAB               CBA   --------> s2 length is zero here so the method will print the permutation                     and the lopp finished and program continue with perivious loop.
                                                                                         
                                                                                         
 Steps : 
