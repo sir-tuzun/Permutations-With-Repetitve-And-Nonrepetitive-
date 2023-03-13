@@ -71,7 +71,7 @@ Steps :
       AB ABC    AA BBC   AB BAC*   AC BAB         BA ABC     BA ABC*     BB AAC    BC AAB         ...             ...          ...  -----> Loop 3        
 
                       
-Before create a loop program will contol every repetitive letter and mark to each of. Realize there are similar permutataion in loop 1 and loop 2 line. Program will decide to create a new loop with isRepetitive method and skip the permutations which signed with *. 
+Before create a loop program will contol every repetitive letter and mark to each of. Realize there are similar permutataion in loop 1 and loop 2 line. Program will decide to create a new loop with isRepetitive method and skip the permutations which signed with *. Notice the program controls string on rigth which is declared as s2 variable in code. Every possible loops and permutations are created base on s2 string.
 
            
                        
