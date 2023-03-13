@@ -55,14 +55,20 @@ Steps :
           s1 = CBA and s2 length 0 then print s1.
           end
          end
-     end   
+      end   
     
     
     
  Repetitive permutation work...
     
     
-    
+                                                                        ABABC                                        
+          
+                A BABC                                          B AABC                      A BABC*         B AABC*           C ABAB 
+
+  AB ABC    AA BBC   AB BAC*   AC BAB         BA ABC     BA ABC*     BB AAC    BC AAB                                         
+
+                        
     
     
     
