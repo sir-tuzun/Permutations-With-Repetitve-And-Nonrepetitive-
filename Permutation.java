@@ -35,19 +35,22 @@ public class Permutation {
         System.out.println("There are " + count[0] + " different string permuatations.");
         System.out.println("Elapsed time = " + (double)(finish - start)/1000 + " second.");
     }
-     
+    
     public static void loops(String s1, String s2, int[] count, boolean[] markRepetitive) {
         if(s2.length() == 0) {
             System.out.println(s1);
             count[0]++;
         }
         
+        // Notice that program will always analyze s2. It creates new permutation which depends on constant s1.   
         markRepetitive = findRepetitive(s2);
         for (int i = 0; i < s2.length(); i++){
-            //If on hand letter is repetitive program will not go into the this permutation 
+            
+            //If on hand letter is repetition program will not create new loop. 
+            //Because There would be a similar permutation which is already created. We should eliminate these.
             if(markRepetitive[i])
                 continue;
-            // Calling recursive method to create nested loops. The loops give us to analyze each step of string.
+            // Calling recursive method to create nested loops.
             else 
                 loops(changeLeft(s1, s2, i),changeRight(s2,i),count,markRepetitive);
         }
@@ -76,6 +79,8 @@ public class Permutation {
     private static boolean[] findRepetitive(String permutation) {
         boolean[] markRepetitive = new boolean[permutation.length()];
         
+        // Notice the letter which takes first place before its similar character will not be marked as repetitive.
+        // Because only one of them can create different permutation.
         for (int i = 0;i < permutation.length(); i++) {
             for (int j = i+1; j < permutation.length(); j++) {
                 if(!markRepetitive[j]){    
